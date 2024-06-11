@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using BlazingBlog.Components.Layout
+@using Microsoft.AspNetCore.Components.Authorization
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,8 +15,25 @@
 </head>
 
 <body>
-    <Routes />
+    @* <Routes /> *@
     <script src="_framework/blazor.web.js"></script>
+
+    <CascadingAuthenticationState>
+        <Router AppAssembly="@typeof(App).Assembly">
+            <Found Context="routeData">
+                <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)"/>
+                <FocusOnNavigate RouteData="@routeData" Selector="h1" /> 
+            </Found>
+            <NotFound>
+                <PageTitle>Not found</PageTitle>
+                <LayoutView Layout="@typeof(MainLayout)">
+                    <p role="alert">Sorry, There's nothing at this address.</p>
+                </LayoutView>
+            </NotFound>
+        </Router>
+    </CascadingAuthenticationState>
 </body>
 
 </html>
+
+

@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BlazingBlog.Migrations
 {
     [DbContext(typeof(BlogContext))]
-    [Migration("20240604162329_InitialCreate")]
+    [Migration("20240611083459_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -140,7 +140,7 @@ namespace BlazingBlog.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("User");
+                    b.ToTable("Users");
 
                     b.HasData(
                         new

@@ -124,7 +124,6 @@ C:\BlazingBlog\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Blaz
 C:\BlazingBlog\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BlazingBlog.props
 C:\BlazingBlog\obj\Debug\net8.0\staticwebassets.pack.json
 C:\BlazingBlog\obj\Debug\net8.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
-C:\BlazingBlog\obj\Debug\net8.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
 C:\BlazingBlog\obj\Debug\net8.0\scopedcss\bundle\BlazingBlog.styles.css
 C:\BlazingBlog\obj\Debug\net8.0\scopedcss\projectbundle\BlazingBlog.bundle.scp.css
 C:\BlazingBlog\obj\Debug\net8.0\BlazingB.8AE24A13.Up2Date
@@ -133,3 +132,5 @@ C:\BlazingBlog\obj\Debug\net8.0\refint\BlazingBlog.dll
 C:\BlazingBlog\obj\Debug\net8.0\BlazingBlog.pdb
 C:\BlazingBlog\obj\Debug\net8.0\BlazingBlog.genruntimeconfig.cache
 C:\BlazingBlog\obj\Debug\net8.0\ref\BlazingBlog.dll
+C:\BlazingBlog\obj\Debug\net8.0\BlazingBlog.sourcelink.json
+C:\BlazingBlog\obj\Debug\net8.0\scopedcss\Components\Pages\Login.razor.rz.scp.css

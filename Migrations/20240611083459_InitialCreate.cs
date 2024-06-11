@@ -26,7 +26,7 @@ namespace BlazingBlog.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "User",
+                name: "Users",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -39,7 +39,7 @@ namespace BlazingBlog.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_User", x => x.Id);
+                    table.PrimaryKey("PK_Users", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -69,15 +69,15 @@ namespace BlazingBlog.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_BlogPosts_User_UserId",
+                        name: "FK_BlogPosts_Users_UserId",
                         column: x => x.UserId,
-                        principalTable: "User",
+                        principalTable: "Users",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.InsertData(
-                table: "User",
+                table: "Users",
                 columns: new[] { "Id", "Email", "FirstName", "Hash", "LastName", "Salt" },
                 values: new object[] { 1, "abhayprince@outlook.com", "Abhay", "dfhkhsdskdfffgfjgfjgkdfhjgkdf/=", "Prince", "dshfksdhfk" });
 
@@ -102,7 +102,7 @@ namespace BlazingBlog.Migrations
                 name: "Categories");
 
             migrationBuilder.DropTable(
-                name: "User");
+                name: "Users");
         }
     }
 }
