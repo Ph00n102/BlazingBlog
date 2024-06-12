@@ -1,5 +1,6 @@
 @page "/admin/manage-categories"
 
+@inject IJSRuntime Js
 @inject CategoryService CategoryService
 
 
@@ -53,7 +54,15 @@
         </tbody>
     </table>
 </div>
-
+<dialog open>
+    <SaveCategoryForm OnSaveCategory="OnSaveCategory"/>
+</dialog>
+<style type="text/css">
+    dialog{
+        padding: 0;
+        border: 2px solid var(--color-purple);
+    }    
+</style>
 
 @code {
     private bool _loading = false;
@@ -62,10 +71,10 @@
 
     protected override async Task OnInitializedAsync()
     {
-        @* await LoadCategoriesAsync(); *@
+        await LoadCategoriesAsync();
     }
 
-     private async Task LoadCategoriesAsync()
+    private async Task LoadCategoriesAsync()
     {
         _loading = true;
         try
@@ -77,5 +86,23 @@
             _loading = false;
         }
     } 
+    private async Task OnSaveCategory(MethodResult saveCategoryResult)
+    {
+        if (saveCategoryResult.Status)
+        {
+            // Category saved successfully
+            await AlertAsync("Category saved successfully");
+            await LoadCategoriesAsync();
+        }
+        else
+        {
+            // there was some error in saving category
+            await AlertAsync(saveCategoryResult.ErrorMessage!);
+        }
+    }
+      private async Task AlertAsync(string message)
+    {
+        await Js.InvokeVoidAsync("window.alert", message);
+    }
 
 }
