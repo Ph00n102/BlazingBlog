@@ -16,7 +16,7 @@
 
 <body>
     @* <Routes /> *@
-    <script src="_framework/blazor.web.js"></script>
+    
 
     <CascadingAuthenticationState>
         <Router AppAssembly="@typeof(App).Assembly">
@@ -32,6 +32,8 @@
             </NotFound>
         </Router>
     </CascadingAuthenticationState>
+    <script src="~/js/common.js"></script>
+    <script src="_framework/blazor.web.js"></script>
 </body>
 
 </html>

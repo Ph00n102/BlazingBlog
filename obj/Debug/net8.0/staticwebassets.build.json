@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "EqIEfseQ/kplR33THLNwL1eu4kpVz1LHUk1va6SM+9M=",
+  "Hash": "TyPEjrxp79hHCf0cZIZa5fActkablCG0M+YNpzWkP0s=",
   "Source": "BlazingBlog",
   "BasePath": "_content/BlazingBlog",
   "Mode": "Default",
@@ -129,6 +129,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.png"
+    },
+    {
+      "Identity": "C:\\BlazingBlog\\wwwroot\\js\\common.js",
+      "SourceId": "BlazingBlog",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\BlazingBlog\\wwwroot\\",
+      "BasePath": "_content/BlazingBlog",
+      "RelativePath": "js/common.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\common.js"
     }
   ]
 }

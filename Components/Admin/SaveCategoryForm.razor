@@ -5,7 +5,7 @@
     <div class="card border-0">
         <div class="card-header bg-purple text-white d-flex justify-content-between align-items-center " style="min-width: 300px">
             <h4> Category</h4>
-            <button type="button" class="btn btn-sm btn-danger" >X</button>
+            <button type="button" class="btn btn-sm btn-danger" @onclick="CloseFromAsync" >X</button>
         </div>
         <div class="card-body">
             <div class="mb-3">
@@ -20,8 +20,8 @@
             </div>
         </div>
         <div class="card-footer d-flex justify-content-between align-items-center">
-            <button type="button" class="btn btn-sm btn-default">Cancel</button>
-            <button type="submit" class="btn btn-sm btn-primary">Save</button>
+            <button type="button" class="btn btn-sm btn-default" @onclick="CloseFromAsync">Cancel</button>
+            <button type="submit" class="btn btn-sm btn-primary" >Save</button>
         </div>
     </div>
 </EditForm>
@@ -30,6 +30,9 @@
 @code {
     [Parameter]
     public EventCallback<MethodResult> OnSaveCategory { get; set; }
+    
+    [Parameter]
+    public EventCallback OnCloseFrom { get; set; }
     private Category _categoryModel = new();
 
     private void OnNameBlur()
@@ -38,6 +41,11 @@
         {
             _categoryModel.Slug = _categoryModel.Name.Slugify();
         }
+    }
+    private async Task CloseFromAsync() 
+    {
+        _categoryModel = new();
+        await OnCloseFrom.InvokeAsync();
     }
     private async Task SaveCategoryAsync()
     {
