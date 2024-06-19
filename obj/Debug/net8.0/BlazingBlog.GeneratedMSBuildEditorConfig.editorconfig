@@ -26,12 +26,36 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/BlazingBlog/Components/BlogPostsList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCbG9nUG9zdHNMaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/BlazingBlog/Components/CategoriesBox.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDYXRlZ29yaWVzQm94LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/BlazingBlog/Components/Layout/TopNavBar.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcVG9wTmF2QmFyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/BlazingBlog/Components/Pages/About.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBYm91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/BlazingBlog/Components/Pages/Admin/ManageBlogs.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxNYW5hZ2VCbG9ncy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/BlazingBlog/Components/Pages/Admin/ManageCategories.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxNYW5hZ2VDYXRlZ29yaWVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/BlazingBlog/Components/Pages/Admin/SaveBlog.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblxTYXZlQmxvZy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/BlazingBlog/Components/Pages/BlogDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xCbG9nRGV0YWlscy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/BlazingBlog/Components/Pages/Counter.razor]

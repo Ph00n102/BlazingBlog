@@ -5,3 +5,4 @@ global using BlazingBlog.Authentication;
 global using BlazingBlog.Data;
 global using BlazingBlog.Data.Entities;
 global using BlazingBlog.Extensions;
+

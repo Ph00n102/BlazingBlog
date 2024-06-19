@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Cryptography.Xml;
+using System.Text.RegularExpressions;
+using BlazingBlog.Extensions;
 
 namespace BlazingBlog.Services
 {
